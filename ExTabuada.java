@@ -21,22 +21,22 @@ class ExTabuada extends JFrame implements ActionListener
     ExTabuada()
     {
         getContentPane().setBackground((Color.cyan));
-		setTitle("Tabuada");
-		setSize(300,200);
-		getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER));
+	setTitle("Tabuada");
+	setSize(300,200);
+	getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER));
 
-		L1 = new JLabel("Digite um numero:");
-		L1.setForeground(Color.black);
+	L1 = new JLabel("Digite um numero:");
+	L1.setForeground(Color.black);
 
         T1 = new JTextField(10);
-		T1.addActionListener(this);
+	T1.addActionListener(this);
 
         B1 = new JButton ("Tabuada");
-		B1.addActionListener(this);
-		B2 = new JButton ("Limpar");
-		B2.addActionListener(this);
-		B3 = new JButton ("Sair");
-		B3.addActionListener(this);
+	B1.addActionListener(this);
+	B2 = new JButton ("Limpar");
+	B2.addActionListener(this);
+	B3 = new JButton ("Sair");
+	B3.addActionListener(this);
 
         A1 = new JTextArea(5,10);
         A1.setEditable(false);
