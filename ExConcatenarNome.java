@@ -53,20 +53,20 @@ class ExConcatenarNome extends JFrame implements ActionListener
 		getContentPane().add(B1); getContentPane().add(B2); getContentPane().add(B3);
 
 		getContentPane().add(L4);getContentPane().add(T4);
-
 	}
 	
-	public void actionPerformed(ActionEvent e){
-
+	public void actionPerformed(ActionEvent e)
+	{
 		if(e.getSource()==B1)
 			T4.setText(T1.getText() + " " + T2.getText() + " " + T3.getText());
 					
 		if(e.getSource()==B2)
-			{ T1.setText(" ");
-				T2.setText(" ");
-				T3.setText(" ");
-					T4.setText(" ");
-				}
+		{
+			T1.setText(" ");
+			T2.setText(" ");
+			T3.setText(" ");
+			T4.setText(" ");
+		}
 
 		if(e.getSource()==B3)
 		{
@@ -74,6 +74,5 @@ class ExConcatenarNome extends JFrame implements ActionListener
 			T3.setText("0"); T4.setText("0");
 			System.exit(0);
 		}
-
 	} 
 }
