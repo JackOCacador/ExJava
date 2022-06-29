@@ -48,9 +48,9 @@ class ExConcatenarNome extends JFrame implements ActionListener
 		B3.addActionListener(this);
 
 		getContentPane().add(L1);getContentPane().add(T1);
-		getContentPane().add(L2); getContentPane().add(T2);
+		getContentPane().add(L2);getContentPane().add(T2);
 		getContentPane().add(L3);getContentPane().add(T3);
-		getContentPane().add(B1); getContentPane().add(B2); getContentPane().add(B3);
+		getContentPane().add(B1);getContentPane().add(B2); getContentPane().add(B3);
 
 		getContentPane().add(L4);getContentPane().add(T4);
 	}
