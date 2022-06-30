@@ -1,9 +1,9 @@
-//ExAppConverterMes.java (Autor: Miguel Teixeira)
+//ExConverterMes.java (Autor: Miguel Teixeira)
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-class ExAppConverterMes extends JFrame implements ActionListener {
+class ExConverterMes extends JFrame implements ActionListener {
     JLabel L1, L2;
     JTextField T1, T2;
     JButton B1, B2, B3;
@@ -11,11 +11,11 @@ class ExAppConverterMes extends JFrame implements ActionListener {
 
     public static void main(String args[]) 
     {
-        JFrame Janela = new ExAppConverterMes();
+        JFrame Janela = new ExConverterMes();
         Janela.setVisible(true);
     }
 
-    ExAppConverterMes() 
+    ExConverterMes() 
     {
         setTitle("Ver Ano");
         setSize(410, 100);
