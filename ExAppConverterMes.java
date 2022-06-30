@@ -1,5 +1,4 @@
-//ExAppConverteMes.java
-
+//ExAppConverterMes.java (Autor: Miguel Teixeira)
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
@@ -10,12 +9,14 @@ class ExAppConverterMes extends JFrame implements ActionListener {
     JButton B1, B2, B3;
     Integer mes = 1;
 
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+    {
         JFrame Janela = new ExAppConverterMes();
         Janela.setVisible(true);
     }
 
-    ExAppConverterMes() {
+    ExAppConverterMes() 
+    {
         setTitle("Ver Ano");
         setSize(410, 100);
         getContentPane().setBackground(new Color(190, 190, 190));
@@ -40,8 +41,8 @@ class ExAppConverterMes extends JFrame implements ActionListener {
         add(B1);add(B2);add(B3);
     }
 
-    public void actionPerformed(ActionEvent e) {
-
+    public void actionPerformed(ActionEvent e) 
+    {
         if (e.getSource() == B1) {
             mes = Integer.parseInt(T1.getText());
             switch (mes) {
@@ -95,7 +96,6 @@ class ExAppConverterMes extends JFrame implements ActionListener {
 
                 default:
                     T2.setText("Existe esse mês?");
-                    break;
             }
         }
 
