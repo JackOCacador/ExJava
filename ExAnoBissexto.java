@@ -1,5 +1,4 @@
 //ExAnoBissexto.java (Autor: Miguel Teixeira)
-
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
@@ -12,11 +11,11 @@ class ExAnoBissexto extends JFrame implements ActionListener
     Integer ano=0;
 
     public static void main(String args[])
-	{
+    {
         JFrame Janela = new ExAnoBissexto();
-        Janela.setVisible(true);
-	}
-
+        Janela.setVisible(true);    
+    }
+    
     ExAnoBissexto()
     {
         setTitle("Ver Ano");
@@ -40,7 +39,7 @@ class ExAnoBissexto extends JFrame implements ActionListener
 
         add(L1);add(T1);add(T2);
         add(B1);add(B2);add(B3);
-	}
+    }
 
     public void actionPerformed(ActionEvent e)
     {        
@@ -52,12 +51,12 @@ class ExAnoBissexto extends JFrame implements ActionListener
 
         if(e.getSource()==B2)
         {
-            ano = Integer.parseInt(T1.getText());
-            if(ano % 4 == 0 & ano % 100 >= 1){
-                T2.setText(" é bissexto.");
-            } else{
-                T2.setText(" não é bissexto");
-            }
+        	ano = Integer.parseInt(T1.getText());		
+       		if(ano % 4 == 0 & ano % 100 >= 1){
+        	T2.setText(" é bissexto.");
+		} else{
+        	T2.setText(" não é bissexto");
+        	}
         }
 
         if(e.getSource()==B3)
